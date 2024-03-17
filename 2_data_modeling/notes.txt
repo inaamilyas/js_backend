@@ -1,0 +1,13 @@
+Moon Modeler 
+Eraser 
+Which type of information is get and stored in the database
+
+Creating a new schema in mongoose
+1- import mongoose
+2- Create schema in mongoose 
+3- Export schema
+
+
+mongoose will rename the model into lower case and also plural of that model such as for User -> users, Todo -> todos
+
+mongoose schema accept two object first will actual schema and second will be for created at and updated at fields which are provided by mongoose by default 
