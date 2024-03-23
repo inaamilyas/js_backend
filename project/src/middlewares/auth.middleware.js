@@ -1,6 +1,6 @@
-import { User } from "../models/user.models";
-import { ApiError } from "../utils/apiErrors";
-import { asyncHandler } from "../utils/asyncHandler";
+import { User } from "../models/user.models.js";
+import { ApiError } from "../utils/apiErrors.js";
+import { asyncHandler } from "../utils/asyncHandler.js";
 import jwt from "jsonwebtoken";
 
 export const verifyJWT = asyncHandler(async (req, res, next) => {
@@ -25,6 +25,7 @@ export const verifyJWT = asyncHandler(async (req, res, next) => {
     }
 
     req.user = user;
+    console.log('Ending up to middleware');
     next();
   } catch (error) {
     console.log(error);
